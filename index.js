@@ -26,5 +26,5 @@ app.post('/tshirt/:id', (req, res) => {
 
 	res.send({
 		tshirt: `tshirticon with your ${logo} and ID of ${id}`,
-	});
+		});
 });
