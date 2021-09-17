@@ -21,10 +21,8 @@ app.post('/tshirt/:id', (req, res) => {
 	const { logo } = req.body;
 
 	if (!logo) {
-		res.status(418).send({ message: 'we need a logo!' })
-	}
+		res.status(418).send({ message: 'we need a logo!' })}
 
 	res.send({
-		tshirt: `tshirticon with your ${logo} and ID of ${id}`,
-		});
+		tshirt: `tshirticon with your ${logo} and ID of ${id}`,});
 });
